@@ -1,0 +1,164 @@
+
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: black;
+}
+
+#pagina{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(4, 154, 255);
+    color: white;
+}
+
+header h1{
+    font-size:20px;
+    text-align: center;
+    padding: 15px;
+}
+
+section.conteudo{
+    background-image: url(/images/people.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.formulario{
+    background-color: rgba(255, 255, 255, 0.699);
+    width: 250px;
+    font-size: 12px;
+    padding: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.formulario p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+.formulario form{
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+.formulario input{
+    padding: 10px;
+    margin-top: 10px;
+     width: 95%;
+     box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.formulario select{
+    padding: 10px;
+    margin-top: 10px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.pales{
+    background-color: rgb(27, 27, 27);
+}
+
+.palestrante {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.palestrante img{
+    width: 100px;
+    float: left;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.palestrante h2 {
+   margin-bottom: 10px;
+}
+
+.palestrante p {
+    margin-bottom: 10px;
+    text-align: justify;
+ }
+
+ footer{
+     background-color: rgb(255, 255, 255);
+     text-align: center;
+     padding: 20px;
+ }
+
+/*Apesar do text align, meu footer nao está centralizado em telas maiores*/
+
+
+ @media screen and (max-width: 650px) {
+    
+    #pagina{
+        width: 100%;
+    }
+
+    section.conteudo{
+        position: relative;
+    }
+    .formulario{
+        background-color: rgba(255, 255, 255, 0.699);
+        position: absolute;
+
+        top:45%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+    .palestrante {
+        width: 80%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .divimg{
+       width: 100%;
+       text-align: center;
+    }
+
+    /* Cruei essa divimg para tentar centralizar a pagina, porem nao obtive exito*/
+
+    .palestrante img{
+        width: 200px;
+    }
+
+    .text{
+        margin-bottom: 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .text h2{
+        margin-bottom: 20px;
+    }
+
+ }
