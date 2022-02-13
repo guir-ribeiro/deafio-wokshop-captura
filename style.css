@@ -28,7 +28,7 @@ header h1{
 }
 
 section.conteudo{
-    background-image: url(/images/people.jpg);
+    background-image: url(images/people.jpg);
     background-size: cover;
     width: 100%;
     height: 500px;
