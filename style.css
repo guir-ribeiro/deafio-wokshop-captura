@@ -107,8 +107,14 @@ input[type="submit"] {
  footer{
      background-color: rgb(255, 255, 255);
      text-align: center;
-     padding: 20px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+
  }
+
+ footer p{
+    padding-bottom: 5px;
+}
 
 /*Apesar do text align, meu footer nao está centralizado em telas maiores*/
 
@@ -123,7 +129,7 @@ input[type="submit"] {
         position: relative;
     }
     .formulario{
-        width: 400px;
+        width: 70%;
         background-color: rgba(255, 255, 255, 0.699);
         position: absolute;
 
@@ -141,25 +147,42 @@ input[type="submit"] {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .divimg{
+    /*.divimg{
        width: 100%;
        text-align: center;
-    }
+       position: relative;
 
+       left: 50%;
+
+       transform: translate(-50%);
+    }
+*/
     /* Cruei essa divimg para tentar centralizar a pagina, porem nao obtive exito*/
 
     .palestrante img{
         width: 200px;
+        position: relative ;
+
+        left: 50%;
+
+        transform: translate(-39%);
+        margin-bottom: 20px;
     }
 
     .text{
         margin-bottom: 10px;
         display: inline-block;
-        text-align: center;
+        
     }
 
     .text h2{
         margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .text p{
+        margin-bottom: 20px;
+        text-align: justify;
     }
 
  }
