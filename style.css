@@ -35,7 +35,7 @@ section.conteudo{
 }
 
 .formulario{
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: rgba(255, 255, 255, 0.753);
     width: 250px;
     font-size: 12px;
     padding: 20px;
@@ -92,7 +92,7 @@ input[type="submit"] {
     width: 100px;
     float: left;
     padding-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .palestrante h2 {
@@ -107,7 +107,7 @@ input[type="submit"] {
  footer{
      background-color: rgb(255, 255, 255);
      text-align: center;
-     padding-top: 30px;
+     padding-top: 10px;
      padding-bottom: 30px;
 
  }
@@ -119,7 +119,7 @@ input[type="submit"] {
 /*Apesar do text align, meu footer nao está centralizado em telas maiores*/
 
 
- @media screen and (max-width: 650px) {
+ @media screen and (max-width: 700px) {
     
     #pagina{
         width: 100%;
